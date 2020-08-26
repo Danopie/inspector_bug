@@ -3,24 +3,20 @@ import 'package:flutter/material.dart';
 
 Future<dynamic> pushPageFromPackage({BuildContext context}) {
   return Navigator.of(context)
-      .push(MaterialPageRoute(builder: (context) => PageInPackage()));
+      .push(MaterialPageRoute(builder: (context) => SamplePage()));
 }
 
-class PageInPackage extends StatefulWidget {
+class SamplePage extends StatefulWidget {
   @override
-  _PageInPackageState createState() => _PageInPackageState();
+  _SamplePageState createState() => _SamplePageState();
 }
 
-class _PageInPackageState extends State<PageInPackage> {
+class _SamplePageState extends State<SamplePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          height: 200,
-          width: 200,
-          color: Colors.greenAccent,
-        ),
+        child: Text("A page from package"),
       ),
     );
   }

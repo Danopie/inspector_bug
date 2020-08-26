@@ -55,5 +55,5 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Future<dynamic> pushPageFromApplication({BuildContext context}) {
   return Navigator.of(context)
-      .push(MaterialPageRoute(builder: (context) => PageInPackage()));
+      .push(MaterialPageRoute(builder: (context) => SamplePage()));
 }
